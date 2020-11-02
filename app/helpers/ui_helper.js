@@ -113,8 +113,10 @@ class UiHelper {
 
     var navigationPane = verseListComposite.find('.navigation-pane');
     var verseListFrame = verseListComposite.find('.verse-list-frame');
+
+    var selectionBoxPosition = $('.selection-box').position()['top'];
   
-    var newVerseListHeight = this.app_container_height - tabsNav.height() - currentVerseListMenu.height() - 40;
+    var newVerseListHeight = this.app_container_height - selectionBoxPosition - 48;
     navigationPane.css('height', newVerseListHeight);
     verseListFrame.css('height', newVerseListHeight);
   

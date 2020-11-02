@@ -110,6 +110,10 @@ h2 {
   margin-right: 0.5em;
 }
 
+.verse-list-composite {
+  clear: both;
+}
+
 .ui-tabs .ui-tabs-nav li.ui-tabs-selected a {
   cursor: default;
 }
@@ -558,6 +562,13 @@ h2 {
   height: 2.2em;
 }
 
+.new-standard-tag-button,
+.show-book-tag-statistics-button,
+.assign-tag-menu-button,
+.assign-last-tag-button {
+  float: left;
+}
+
 .tag-delete-button {
   margin-right: 0.5em;
   float: left;
@@ -751,8 +762,6 @@ h2 {
 
 .assign-tag-menu-button {
   margin-left: 0.5em;
-  float: none;
-  display: inline-block;
   width: 11em;
 }
 
@@ -1130,6 +1139,17 @@ h2 {
 
 .selected-verses a:hover, .selected-verses a:active {
   text-decoration: underline;
+}
+
+.selection-box {
+  float: left;
+  margin-left: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+.verse-list-tabs-small-screen .selection-box {
+  clear: both;
 }
 
 #search-result-content {

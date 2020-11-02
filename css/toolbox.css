@@ -523,8 +523,3 @@ tr.td-underline td {
 .is-global {
   display: none;
 }
-
-.selection-box {
-  display: inline-block;
-  margin-left: 0.5em;
-}
