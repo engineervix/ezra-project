@@ -143,10 +143,10 @@ class UiHelper {
     var tagsToolBarHeight = $('#tags-toolbar').height();
   
     if (bible_browser_controller.optionsMenu.strongsSwitchChecked()) {
-      $('#tags-content-global').css('height', this.app_container_height - tagsToolBarHeight - 535);
+      $('#tags-content-global').css('height', this.app_container_height - tagsToolBarHeight - 538);
       $('#dictionary-info-box-panel').css('height', 422);
     } else {
-      $('#tags-content-global').css('height', this.app_container_height - tagsToolBarHeight - 55);
+      $('#tags-content-global').css('height', this.app_container_height - tagsToolBarHeight - 58);
     }
 
     var tabCount = bible_browser_controller.tab_controller.getTabCount();
