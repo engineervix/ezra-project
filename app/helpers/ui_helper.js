@@ -107,8 +107,6 @@ class UiHelper {
       tabIndex = bible_browser_controller.tab_controller.getSelectedTabIndex();
     }
 
-    var tabsNav = $(document.getElementById('verse-list-tabs').querySelector('.ui-tabs-nav'));
-    var currentVerseListMenu = bible_browser_controller.getCurrentVerseListMenu(tabIndex);
     var verseListComposite = bible_browser_controller.getCurrentVerseListComposite(tabIndex);
 
     var navigationPane = verseListComposite.find('.navigation-pane');
