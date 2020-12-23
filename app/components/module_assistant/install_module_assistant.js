@@ -433,7 +433,7 @@ class InstallModuleAssistant {
       if (!moduleInstalled) {
         var progressMessageBox = $('#module-install-progress-msg');
         progressMessageBox.empty();
-        await nsi.installModule(moduleCode, (progress) => { this.handleModuleInstallProgress(progress); });
+        await nsi.installModule((progress) => { this.handleModuleInstallProgress(progress); }, moduleCode);
       }
 
       // Sleep a bit after installation. This is actually a hack to prevent
@@ -502,11 +502,11 @@ class InstallModuleAssistant {
 
     try {
       if (!nsi.hebrewStrongsAvailable()) {
-        await nsi.installModule("StrongsHebrew", (progress) => { this.handleModuleInstallProgress(progress); });
+        await nsi.installModule((progress) => { this.handleModuleInstallProgress(progress); }, "StrongsHebrew");
       }
 
       if (!nsi.greekStrongsAvailable()) {
-        await nsi.installModule("StrongsGreek", (progress) => { this.handleModuleInstallProgress(progress); });
+        await nsi.installModule((progress) => { this.handleModuleInstallProgress(progress); }, "StrongsGreek");
       }
     } catch (e) {
       strongsInstallSuccessful = false;

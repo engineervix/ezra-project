@@ -164,7 +164,7 @@ class SpectronHelper {
     if (!kjvFound) {
       const nsi = await this.getNSI(true);
       await nsi.updateRepositoryConfig();
-      await nsi.installModule('KJV');
+      await nsi.installModule(undefined, 'KJV');
 
       var kjvAvailable = await this.isKjvAvailable();
       assert(kjvAvailable);

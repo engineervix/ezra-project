@@ -376,8 +376,8 @@ class TranslationController {
     htmlElementForMessages.append(message);
 
     try {
-      await nsi.installModule("StrongsHebrew");
-      await nsi.installModule("StrongsGreek");
+      await nsi.installModule(undefined, "StrongsHebrew");
+      await nsi.installModule(undefined, "StrongsGreek");
       app_controller.dictionary_controller.runAvailabilityCheck();
       var doneMessage = "<span> " + i18n.t("general.done") + ".</span><br/>";
       htmlElementForMessages.append(doneMessage);
